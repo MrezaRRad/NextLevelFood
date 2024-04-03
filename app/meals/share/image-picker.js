@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { useRef, useState } from "react";
 import styles from "./image-picker.module.css";
@@ -33,6 +34,8 @@ function MealImagePicker({ lable, name }) {
           <Image
             src={mealImage}
             alt="This is a meal's image from a customer"
+            name={name}
+            lable={lable}
             fill
           />
         )}
